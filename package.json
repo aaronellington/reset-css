@@ -1,0 +1,35 @@
+{
+	"name": "@aaronellington/reset-css",
+	"version": "0.0.2",
+	"description": "A lightweight but full-featured CSS reset (with dark mode support). ",
+	"main": "./dist/style.css",
+	"scripts": {
+		"build": "vite build && storybook build && cp dist/style.css storybook-static/reset-css.css",
+		"watch": "storybook dev -p 2291",
+		"lint": "prettier --check .",
+		"fix": "prettier --write .",
+		"test": "echo TODO"
+	},
+	"devDependencies": {
+		"@storybook/addon-essentials": "^7.4.1",
+		"@storybook/addon-interactions": "^7.4.1",
+		"@storybook/addon-links": "^7.4.1",
+		"@storybook/addon-onboarding": "^1.0.8",
+		"@storybook/blocks": "^7.4.1",
+		"@storybook/react": "^7.4.1",
+		"@storybook/react-vite": "^7.4.1",
+		"@storybook/testing-library": "^0.2.0",
+		"@types/node": "^20.6.0",
+		"@types/react-dom": "^18.2.7",
+		"@typescript-eslint/eslint-plugin": "^6.6.0",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-storybook": "^0.6.13",
+		"prettier": "3.0.3",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-icons": "^4.11.0",
+		"sass": "^1.66.1",
+		"storybook": "^7.4.1",
+		"typescript": "^5.2.2"
+	}
+}

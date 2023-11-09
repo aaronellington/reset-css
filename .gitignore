@@ -1,0 +1,12 @@
+# System
+.DS_Store
+
+# Temp
+/var/
+
+# Secrets
+/.env*local
+
+# Node
+/node_modules/
+/storybook-static/

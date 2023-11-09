@@ -1,0 +1,13 @@
+@import './variables.scss';
+@import './reset.scss';
+@import './form.scss';
+@import './article.scss';
+
+form,
+article,
+section,
+main {
+	display: flex;
+	gap: var(--reset-css-space);
+	flex-direction: column;
+}

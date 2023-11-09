@@ -1,0 +1,121 @@
+@mixin main {
+	border: 0;
+	display: block;
+	padding: var(--reset-css-space-half) var(--reset-css-space);
+	border-radius: var(--reset-css-space-half);
+	font-weight: bold;
+	border: var(--reset-css-border-primary);
+	border-style: solid;
+	font-size: 1rem;
+	&:hover {
+		cursor: pointer;
+	}
+
+	.label {
+		display: block;
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
+}
+
+// Default
+@mixin default {
+	@include main;
+
+	background-color: var(--reset-css-foreground-primary);
+	border-color: var(--reset-css-foreground-primary);
+	color: var(--reset-css-background-primary);
+
+	&.outline {
+		background-color: transparent;
+		border-color: var(--reset-css-foreground-primary);
+		color: var(--reset-css-foreground-primary);
+	}
+
+	&:hover {
+		background-color: var(--reset-css-foreground-secondary);
+		border-color: var(--reset-css-foreground-secondary);
+		color: var(--reset-css-background-secondary);
+	}
+}
+
+@mixin accent {
+	@include main;
+
+	background-color: var(--reset-css-accent-background);
+	border-color: var(--reset-css-accent-background);
+	color: var(--reset-css-accent-text);
+
+	&.outline {
+		background-color: transparent;
+		border-color: var(--reset-css-accent-background);
+		color: var(--reset-css-accent-background);
+	}
+
+	&:hover {
+		background-color: var(--reset-css-accent-background-hover);
+		border-color: var(--reset-css-accent-background-hover);
+		color: var(--reset-css-accent-text-hover);
+	}
+}
+
+@mixin success {
+	@include main;
+
+	background-color: var(--reset-css-success-background);
+	border-color: var(--reset-css-success-background);
+	color: var(--reset-css-success-text);
+
+	&.outline {
+		background-color: transparent;
+		border-color: var(--reset-css-success-background);
+		color: var(--reset-css-success-background);
+	}
+
+	&:hover {
+		background-color: var(--reset-css-success-background-hover);
+		border-color: var(--reset-css-success-background-hover);
+		color: var(--reset-css-success-text-hover);
+	}
+}
+
+@mixin warning {
+	@include main;
+
+	background-color: var(--reset-css-warning-background);
+	border-color: var(--reset-css-warning-background);
+	color: var(--reset-css-warning-text);
+
+	// TODO: light mode on this does not look good
+	&.outline {
+		background-color: transparent;
+		border-color: var(--reset-css-warning-background);
+		color: var(--reset-css-warning-background);
+	}
+
+	&:hover {
+		background-color: var(--reset-css-warning-background-hover);
+		border-color: var(--reset-css-warning-background-hover);
+		color: var(--reset-css-warning-text-hover);
+	}
+}
+
+@mixin danger {
+	@include main;
+
+	background-color: var(--reset-css-danger-background);
+	border-color: var(--reset-css-danger-background);
+	color: var(--reset-css-danger-text);
+
+	&.outline {
+		background-color: transparent;
+		border-color: var(--reset-css-danger-background);
+		color: var(--reset-css-danger-background);
+	}
+
+	&:hover {
+		background-color: var(--reset-css-danger-background-hover);
+		border-color: var(--reset-css-danger-background-hover);
+		color: var(--reset-css-danger-text-hover);
+	}
+}
