@@ -1,8 +1,8 @@
 @mixin main {
 	border: 0;
 	display: block;
-	padding: var(--reset-css-space-half) var(--reset-css-space);
-	border-radius: var(--reset-css-space-half);
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
 	font-weight: bold;
 	border: var(--reset-css-border-primary);
 	border-style: solid;

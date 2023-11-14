@@ -7,7 +7,7 @@ img {
 	max-height: 75vh;
 	max-width: 100%;
 	vertical-align: middle;
-	border-radius: var(--reset-css-space-half);
+	border-radius: 0.5rem;
 }
 
 ul,
@@ -84,14 +84,14 @@ progress {
 
 details {
 	background: var(--reset-css-background-primary);
-	padding: var(--reset-css-space);
+	padding: 1rem;
 	border: var(--reset-css-border-primary);
-	border-radius: var(--reset-css-space-half);
+	border-radius: 0.5rem;
 
 	&[open] > summary {
 		border-bottom: var(--reset-css-border-primary);
-		padding-bottom: var(--reset-css-space);
-		margin-bottom: var(--reset-css-space);
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
 	}
 
 	summary {

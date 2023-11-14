@@ -8,6 +8,6 @@ article,
 section,
 main {
 	display: flex;
-	gap: var(--reset-css-space);
+	gap: 1rem;
 	flex-direction: column;
 }
