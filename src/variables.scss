@@ -1,4 +1,4 @@
-:root {
+html {
 	--reset-css-page-width: 55rem;
 
 	--reset-css-font-family-title: sans-serif;
@@ -36,7 +36,7 @@
 
 // Dark mode overrides
 @media (prefers-color-scheme: dark) {
-	body:not(.disable-dark-mode) {
+	html:not(.disable-dark-mode) {
 		--reset-css-background-primary: #1c1c1d;
 		--reset-css-background-secondary: #222525;
 		--reset-css-background-tertiary: #2a2c2e;
@@ -55,7 +55,7 @@
 	}
 }
 
-:root {
+html {
 	--reset-css-border-primary: 0.063rem solid
 		var(--reset-css-foreground-tertiary);
 	--reset-css-border-wide: 0.125rem solid var(--reset-css-foreground-tertiary);
