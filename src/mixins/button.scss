@@ -16,6 +16,11 @@
 		text-transform: uppercase;
 		font-weight: bolder;
 	}
+
+	&[disabled] {
+		cursor: not-allowed;
+		opacity: 0.75;
+	}
 }
 
 // Default
