@@ -58,10 +58,12 @@
 		color: var(--reset-css-accent-background);
 	}
 
-	&:hover {
-		background-color: var(--reset-css-accent-background-hover);
-		border-color: var(--reset-css-accent-background-hover);
-		color: var(--reset-css-accent-text-hover);
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--reset-css-accent-background-hover);
+			border-color: var(--reset-css-accent-background-hover);
+			color: var(--reset-css-accent-text-hover);
+		}
 	}
 }
 
@@ -78,10 +80,12 @@
 		color: var(--reset-css-success-background);
 	}
 
-	&:hover {
-		background-color: var(--reset-css-success-background-hover);
-		border-color: var(--reset-css-success-background-hover);
-		color: var(--reset-css-success-text-hover);
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--reset-css-success-background-hover);
+			border-color: var(--reset-css-success-background-hover);
+			color: var(--reset-css-success-text-hover);
+		}
 	}
 }
 
@@ -99,10 +103,12 @@
 		color: var(--reset-css-warning-background);
 	}
 
-	&:hover {
-		background-color: var(--reset-css-warning-background-hover);
-		border-color: var(--reset-css-warning-background-hover);
-		color: var(--reset-css-warning-text-hover);
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--reset-css-warning-background-hover);
+			border-color: var(--reset-css-warning-background-hover);
+			color: var(--reset-css-warning-text-hover);
+		}
 	}
 }
 
@@ -119,9 +125,11 @@
 		color: var(--reset-css-danger-background);
 	}
 
-	&:hover {
-		background-color: var(--reset-css-danger-background-hover);
-		border-color: var(--reset-css-danger-background-hover);
-		color: var(--reset-css-danger-text-hover);
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--reset-css-danger-background-hover);
+			border-color: var(--reset-css-danger-background-hover);
+			color: var(--reset-css-danger-text-hover);
+		}
 	}
 }
