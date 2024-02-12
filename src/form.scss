@@ -65,8 +65,4 @@ input[type="submit"] {
 		cursor: not-allowed;
 		opacity: 0.75;
 	}
-
-	&:hover {
-		background-color: var(--reset-css-accent-secondary);
-	}
 }
