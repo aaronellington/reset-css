@@ -1,28 +1,28 @@
-import '../src/index.scss'
+import type { Preview } from "@storybook/react"
 
-import type { Preview } from '@storybook/react'
+import "../src/index.scss"
 
 const preview: Preview = {
 	parameters: {
-		backgrounds: {
-			default: 'primary',
-			values: [
-				{
-					name: 'primary',
-					value: 'var(--reset-css-background-primary)',
-				},
-				{
-					name: 'secondary',
-					value: 'var(--reset-css-background-secondary)',
-				},
-			],
-		},
-		actions: { argTypesRegex: '^on[A-Z].*' },
+		actions: { argTypesRegex: "^on[A-Z].*" },
 		controls: {
 			matchers: {
 				color: /(background|color)$/i,
-				date: /Date$/,
+				date: /Date$/i,
 			},
+		},
+		backgrounds: {
+			default: "Primary",
+			values: [
+				{
+					name: "Primary",
+					value: "var(--reset-css-background-primary)",
+				},
+				{
+					name: "Secondary",
+					value: "var(--reset-css-background-secondary)",
+				},
+			],
 		},
 	},
 }

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from "@storybook/react"
 
 type Props = {
 	children: JSX.Element
@@ -10,7 +10,7 @@ const Card = (props: Props) => {
 
 const meta: Meta<typeof Card> = {
 	component: Card,
-	title: 'Demo',
+	title: "Demo",
 }
 export default meta
 type Story = StoryObj<typeof Card>
@@ -18,7 +18,7 @@ type Story = StoryObj<typeof Card>
 const demoData = (
 	<>
 		<main>
-			<section id="preview">
+			<article id="preview">
 				<h2>Preview</h2>
 				<p>
 					Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet
@@ -42,7 +42,7 @@ const demoData = (
 					<fieldset>
 						<label htmlFor="terms">
 							<input type="checkbox" role="switch" id="terms" name="terms" />I
-							agree to the{' '}
+							agree to the{" "}
 							<a
 								href="#"
 								onClick={(e) => {
@@ -55,9 +55,9 @@ const demoData = (
 					</fieldset>
 					<button type="submit">Subscribe</button>
 				</form>
-			</section>
+			</article>
 
-			<section id="typography">
+			<article id="typography">
 				<h2>Typography</h2>
 				<p>
 					Aliquam lobortis vitae nibh nec rhoncus. Morbi mattis neque eget
@@ -184,20 +184,20 @@ const demoData = (
 						alt="Photo alt text"
 					/>
 					<figcaption>
-						Image from
+						Image from{" "}
 						<a href="#" target="_blank" rel="noreferrer">
 							unsplash.com
 						</a>
 					</figcaption>
 				</figure>
-			</section>
+			</article>
 
-			<section id="button">
+			<article id="button">
 				<h2>Button</h2>
 				<button>Primary</button>
-			</section>
+			</article>
 
-			<section id="form">
+			<article id="form">
 				<form>
 					<h2>Form elements</h2>
 
@@ -371,9 +371,9 @@ const demoData = (
 						}}
 					/>
 				</form>
-			</section>
+			</article>
 
-			<section id="tables">
+			<article id="tables">
 				<h2>Tables</h2>
 				<figure>
 					<table role="grid">
@@ -423,9 +423,9 @@ const demoData = (
 						</tbody>
 					</table>
 				</figure>
-			</section>
+			</article>
 
-			<section id="accordions">
+			<article id="accordions">
 				<h2>Accordions</h2>
 				<details>
 					<summary>Accordion 1</summary>
@@ -459,7 +459,7 @@ const demoData = (
 						<li>Cras sed libero aliquet, porta dolor quis, dapibus ipsum.</li>
 					</ul>
 				</details>
-			</section>
+			</article>
 
 			<article id="article">
 				<h2>Article</h2>
@@ -477,11 +477,11 @@ const demoData = (
 				</footer>
 			</article>
 
-			<section id="progress">
+			<article id="progress">
 				<h2>Progress bar</h2>
-				<progress id="progress-1" value="25" max="100"></progress>
-				<progress id="progress-2"></progress>
-			</section>
+				<progress id="progress-1" value="25" max="100" />
+				<progress id="progress-2" />
+			</article>
 		</main>
 	</>
 )

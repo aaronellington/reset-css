@@ -2,3 +2,7 @@
 /storybook-static/
 *.yaml
 *.yml
+*.js
+*.jsx
+*.ts
+*.tsx

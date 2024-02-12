@@ -1,62 +1,31 @@
-html {
-	--reset-css-page-width: 55rem;
+:root {
+	--reset-css-accent-primary: #015eb8;
+	--reset-css-accent-secondary: #015eb8;
+	--reset-css-accent-text: #ffffff;
 
-	--reset-css-font-family-title: sans-serif;
-	--reset-css-font-family-body: sans-serif;
-	--reset-css-font-size: 16px;
+	--reset-css-background-primary: #ffffff;
+	--reset-css-background-secondary: #f8f8f8;
+	--reset-css-background-muted: #e5e5e5;
 
-	--reset-css-background-primary: #f8f8f8;
-	--reset-css-background-secondary: white;
-	--reset-css-background-tertiary: #fdfdfd;
-
-	--reset-css-foreground-primary: #3b3b3b;
-	--reset-css-foreground-secondary: #545454;
-	--reset-css-foreground-tertiary: #bababa;
-
-	--reset-css-accent-background: #1a73e8;
-	--reset-css-accent-background-hover: #1a73e8;
-	--reset-css-accent-text: white;
-	--reset-css-accent-text-hover: white;
-
-	--reset-css-danger-background: #fe5f57;
-	--reset-css-danger-background-hover: #fe6f68;
-	--reset-css-danger-text: black;
-	--reset-css-danger-text-hover: black;
-
-	--reset-css-warning-background: #ff9800;
-	--reset-css-warning-background-hover: #ff9800;
-	--reset-css-warning-text: black;
-	--reset-css-warning-text-hover: black;
-
-	--reset-css-success-background: #26c940;
-	--reset-css-success-background-hover: #38d951;
-	--reset-css-success-text: black;
-	--reset-css-success-text-hover: black;
+	--reset-css-foreground-primary: #202020;
+	--reset-css-foreground-secondary: #616161;
 }
 
-// Dark mode overrides
 @media (prefers-color-scheme: dark) {
-	html:not(.disable-dark-mode) {
-		--reset-css-background-primary: #1c1c1d;
-		--reset-css-background-secondary: #222525;
-		--reset-css-background-tertiary: #2a2c2e;
+	:root {
+		--reset-css-accent-primary: #0078d4;
+		--reset-css-accent-secondary: #0078d4;
+		--reset-css-accent-text: #ffffff;
 
-		--reset-css-foreground-primary: #c9cdce;
-		--reset-css-foreground-secondary: #9da2a6;
-		--reset-css-foreground-tertiary: #3d4040;
+		--reset-css-background-primary: #202020;
+		--reset-css-background-secondary: #181818;
+		--reset-css-background-muted: #3b3b3b;
 
-		--reset-css-accent-background: #019cfd;
-		--reset-css-accent-background-hover: #22a9fe;
-		--reset-css-accent-text: black;
-		--reset-css-accent-text-hover: black;
-
-		--reset-css-warning-background: #febb2e;
-		--reset-css-warning-background-hover: #fecc61;
+		--reset-css-foreground-primary: #d7d7d7;
+		--reset-css-foreground-secondary: #868686;
 	}
-}
 
-html {
-	--reset-css-border-primary: 0.063rem solid
-		var(--reset-css-foreground-tertiary);
-	--reset-css-border-wide: 0.125rem solid var(--reset-css-foreground-tertiary);
+	html {
+		color-scheme: dark;
+	}
 }

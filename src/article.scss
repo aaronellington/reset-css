@@ -1,101 +1,102 @@
-figure {
-	overflow-x: auto;
-}
+article {
+	figure {
+		overflow-x: auto;
+	}
 
-img {
-	display: inline-block;
-	max-height: 75vh;
-	max-width: 100%;
-	vertical-align: middle;
-	border-radius: 0.5rem;
-}
+	img {
+		display: inline-block;
+		max-height: 75vh;
+		max-width: 100%;
+		vertical-align: middle;
+		border-radius: 0.5rem;
+	}
 
-ul,
-ol {
-	padding-left: 1rem;
-}
+	ul,
+	ol {
+		padding-left: 1rem;
+	}
 
-ul li {
-	list-style: square;
-}
+	ul li {
+		list-style: square;
+	}
 
-blockquote {
-	border-left: var(--reset-css-border-wide);
-	padding: 1rem;
-	footer {
-		margin-top: 1rem;
-		cite {
-			opacity: 0.75;
+	blockquote {
+		border-left: 4px solid var(--reset-css-background-muted);
+		padding: 1rem;
+		footer {
+			margin-top: 1rem;
+			cite {
+				opacity: 0.75;
+			}
 		}
 	}
-}
 
-table {
-	background: var(--reset-css-background-secondary);
+	table {
+		background: var(--reset-css-background-secondary);
 
-	th,
-	td {
-		border-bottom: var(--reset-css-border-primary);
-		padding: 0.5rem;
-	}
+		th,
+		td {
+			border-bottom: 1px solid var(--reset-css-background-muted);
+			padding: 0.5rem;
+		}
 
-	thead th {
-		border-bottom: var(--reset-css-border-wide);
-	}
+		thead th {
+			border-bottom: 4px solid var(--reset-css-background-muted);
+		}
 
-	min-width: 100%;
-	border-collapse: collapse;
-	text-align: left;
+		min-width: 100%;
+		border-collapse: collapse;
+		text-align: left;
 
-	tbody {
-		tr:nth-child(2n-1) {
-			background: var(--reset-css-background-tertiary);
+		tbody {
+			tr:nth-child(2n-1) {
+				background: var(--reset-css-background-primary);
+			}
 		}
 	}
-}
 
-ins {
-	color: var(--reset-css-success-background);
-}
-
-del {
-	color: var(--reset-css-danger-background);
-}
-
-mark {
-	color: var(--reset-css-warning-text);
-	background: var(--reset-css-warning-background);
-	border-radius: 0.25rem;
-	padding: 0.25rem;
-}
-
-kbd {
-	border-radius: 0.25rem;
-	padding: 0.25rem;
-	font-family: monospace;
-	font-weight: bold;
-	background: var(--reset-css-foreground-primary);
-	color: var(--reset-css-background-primary);
-}
-
-progress {
-	width: 100%;
-}
-
-details {
-	background: var(--reset-css-background-primary);
-	padding: 1rem;
-	border: var(--reset-css-border-primary);
-	border-radius: 0.5rem;
-
-	&[open] > summary {
-		border-bottom: var(--reset-css-border-primary);
-		padding-bottom: 1rem;
-		margin-bottom: 1rem;
+	ins {
+		color: var(--reset-css-success-background);
 	}
 
-	summary {
-		user-select: none;
-		cursor: pointer;
+	del {
+		color: var(--reset-css-danger-background);
+	}
+
+	mark {
+		background: #ffff00;
+		border-radius: 0.25rem;
+		padding: 0.25rem;
+	}
+
+	kbd {
+		border-radius: 0.25rem;
+		padding: 0.25rem;
+		font-family: monospace;
+		font-weight: bold;
+		background: var(--reset-css-foreground-primary);
+		color: var(--reset-css-background-primary);
+	}
+
+	progress {
+		width: 100%;
+	}
+
+	details {
+		background: var(--reset-css-background-primary);
+		padding: 1rem;
+		border: 1px solid var(--reset-css-background-muted);
+		border-radius: 0.5rem;
+
+		&[open] > summary {
+			border-bottom: 1px solid var(--reset-css-background-muted);
+			padding-bottom: 1rem;
+			margin-bottom: 1rem;
+		}
+
+		summary {
+			user-select: none;
+			cursor: pointer;
+		}
 	}
 }
