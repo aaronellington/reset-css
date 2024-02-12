@@ -9,10 +9,12 @@
 
 	--reset-css-foreground-primary: #202020;
 	--reset-css-foreground-secondary: #616161;
+
+	accent-color: var(--reset-css-accent-primary);
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
+	:root:not(.disable-dark-mode) {
 		--reset-css-accent-primary: #0078d4;
 		--reset-css-accent-secondary: #0078d4;
 		--reset-css-accent-text: #ffffff;
