@@ -31,7 +31,7 @@ input[type="text"] {
 	background-color: var(--reset-css-background-primary);
 	color: var(--reset-css-foreground-primary);
 	border: 1px solid var(--reset-css-background-tertiary);
-	border-radius: 0.5rem;
+	border-radius: var(--reset-css-border-radius);
 
 	&[disabled] {
 		cursor: not-allowed;
@@ -50,7 +50,7 @@ input[type="button"],
 input[type="submit"] {
 	border: 0;
 	display: block;
-	border-radius: 0.5em;
+	border-radius: var(--reset-css-border-radius);
 	text-align: center;
 	color: var(--reset-css-accent-text);
 	padding: 0.5em 1em;

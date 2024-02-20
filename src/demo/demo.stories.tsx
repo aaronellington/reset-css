@@ -61,9 +61,14 @@ const demoData = (
 				<h2>Typography</h2>
 				<p>
 					Aliquam lobortis vitae nibh nec rhoncus. Morbi mattis neque eget
-					efficitur feugiat. Vivamus porta nunc a erat mattis, mattis feugiat
-					turpis pretium. Quisque sed tristique felis.
+					efficitur feugiat. <code>console.log("foobar")</code> Vivamus porta
+					nunc a erat mattis, mattis feugiat turpis pretium. Quisque sed
+					tristique felis.
 				</p>
+
+				<pre>
+					<code>console.log("foobar") </code>
+				</pre>
 
 				<blockquote>
 					&ldquo;Maecenas vehicula metus tellus, vitae congue turpis hendrerit

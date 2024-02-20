@@ -1,6 +1,6 @@
 {
 	"name": "@aaronellington/reset-css",
-	"version": "0.1.3",
+	"version": "0.1.6",
 	"description": "A lightweight but full-featured CSS reset (with dark mode support). ",
 	"main": "./dist/style.css",
 	"scripts": {
