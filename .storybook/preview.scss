@@ -1,0 +1,15 @@
+@import url("../src/index.scss");
+
+:root {
+	--reset-css-accent-primary: tomato;
+	--reset-css-accent-secondary: tomato;
+	--reset-css-accent-text: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not(.disable-dark-mode) {
+		--reset-css-accent-primary: cyan;
+		--reset-css-accent-secondary: cyan;
+		--reset-css-accent-text: #000000;
+	}
+}

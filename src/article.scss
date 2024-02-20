@@ -21,7 +21,7 @@ article {
 	}
 
 	blockquote {
-		border-left: 4px solid var(--reset-css-background-muted);
+		border-left: 4px solid var(--reset-css-background-tertiary);
 		padding: 1rem;
 		footer {
 			margin-top: 1rem;
@@ -36,12 +36,12 @@ article {
 
 		th,
 		td {
-			border-bottom: 1px solid var(--reset-css-background-muted);
+			border-bottom: 1px solid var(--reset-css-background-tertiary);
 			padding: 0.5rem;
 		}
 
 		thead th {
-			border-bottom: 4px solid var(--reset-css-background-muted);
+			border-bottom: 4px solid var(--reset-css-background-tertiary);
 		}
 
 		min-width: 100%;
@@ -64,7 +64,8 @@ article {
 	}
 
 	mark {
-		background: #ffff00;
+		background: var(--reset-css-warning-background);
+		color: var(--reset-css-warning-text);
 		border-radius: 0.25rem;
 		padding: 0.25rem;
 	}
@@ -85,11 +86,11 @@ article {
 	details {
 		background: var(--reset-css-background-primary);
 		padding: 1rem;
-		border: 1px solid var(--reset-css-background-muted);
+		border: 1px solid var(--reset-css-background-tertiary);
 		border-radius: 0.5rem;
 
 		&[open] > summary {
-			border-bottom: 1px solid var(--reset-css-background-muted);
+			border-bottom: 1px solid var(--reset-css-background-tertiary);
 			padding-bottom: 1rem;
 			margin-bottom: 1rem;
 		}

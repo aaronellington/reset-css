@@ -30,7 +30,7 @@ input[type="text"] {
 	border: 0;
 	background-color: var(--reset-css-background-primary);
 	color: var(--reset-css-foreground-primary);
-	border: 1px solid var(--reset-css-background-muted);
+	border: 1px solid var(--reset-css-background-tertiary);
 	border-radius: 0.5rem;
 
 	&[disabled] {
@@ -66,4 +66,16 @@ input[type="submit"] {
 		cursor: not-allowed;
 		opacity: 0.75;
 	}
+}
+
+input[aria-invalid="false"],
+select[aria-invalid="false"],
+textarea[aria-invalid="false"] {
+	border-color: var(--reset-css-success-background);
+}
+
+input[aria-invalid="true"],
+select[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+	border-color: var(--reset-css-danger-background);
 }

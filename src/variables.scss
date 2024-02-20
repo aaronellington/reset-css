@@ -1,33 +1,45 @@
 :root {
+	--reset-css-foreground-primary: #202020;
+	--reset-css-foreground-secondary: #616161;
+
+	--reset-css-background-primary: #ffffff;
+	--reset-css-background-secondary: #f8f8f8;
+	--reset-css-background-tertiary: #e5e5e5;
+
 	--reset-css-accent-primary: #015eb8;
 	--reset-css-accent-secondary: #015eb8;
 	--reset-css-accent-text: #ffffff;
 
-	--reset-css-background-primary: #ffffff;
-	--reset-css-background-secondary: #f8f8f8;
-	--reset-css-background-muted: #e5e5e5;
+	--reset-css-danger-primary: #fe5f57;
+	--reset-css-danger-secondary: #fe6f68;
+	--reset-css-danger-text: black;
 
-	--reset-css-foreground-primary: #202020;
-	--reset-css-foreground-secondary: #616161;
+	--reset-css-warning-primary: #ff9800;
+	--reset-css-warning-secondary: #ff9800;
+	--reset-css-warning-text: black;
+
+	--reset-css-success-primary: #26c940;
+	--reset-css-success-secondary: #38d951;
+	--reset-css-success-text: black;
 
 	accent-color: var(--reset-css-accent-primary);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root:not(.disable-dark-mode) {
+		--reset-css-foreground-primary: #d7d7d7;
+		--reset-css-foreground-secondary: #868686;
+
+		--reset-css-background-primary: #202020;
+		--reset-css-background-secondary: #181818;
+		--reset-css-background-tertiary: #3b3b3b;
+
 		--reset-css-accent-primary: #0078d4;
 		--reset-css-accent-secondary: #0078d4;
 		--reset-css-accent-text: #ffffff;
 
-		--reset-css-background-primary: #202020;
-		--reset-css-background-secondary: #181818;
-		--reset-css-background-muted: #3b3b3b;
-
-		--reset-css-foreground-primary: #d7d7d7;
-		--reset-css-foreground-secondary: #868686;
-	}
-
-	html {
-		color-scheme: dark;
+		--reset-css-warning-primary: #febb2e;
+		--reset-css-warning-secondary: #fecc61;
+		--reset-css-warning-text: black;
 	}
 }
